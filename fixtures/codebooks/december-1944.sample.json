@@ -1,0 +1,19 @@
+{
+  "schema": "enigma-codebook",
+  "version": 1,
+  "name": "U571 · MẪU THÁNG 12",
+  "network": "GEHEIM",
+  "seed": "U571-1944-12",
+  "year": 1944,
+  "month": 12,
+  "model": "I",
+  "reflector": "B",
+  "days": {
+    "31": {
+      "rotors": ["II", "III", "IV"],
+      "rings": [20, 4, 5],
+      "plugs": ["AO", "BQ", "CL", "EH", "FT", "GZ", "IM", "JV", "KR", "PW"],
+      "kenngruppen": ["EYF", "KVV", "GOV", "SML"]
+    }
+  }
+}

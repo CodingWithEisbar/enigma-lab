@@ -1,0 +1,29 @@
+name: Báo lỗi
+description: Báo hành vi sai hoặc tính năng không hoạt động
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Mô tả lỗi
+      description: Điều gì đã xảy ra và bro mong đợi điều gì?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Các bước tái hiện
+      placeholder: "1. Mở...\n2. Chọn...\n3. Bấm..."
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Môi trường
+      placeholder: Chrome 140, Windows 11, màn hình 390 px
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Log hoặc ảnh chụp
+      description: Không đính kèm secret, Codebook thật hoặc dữ liệu cá nhân.

@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Enigma I default AAAAA",
+    "config": {
+      "model": "I",
+      "rotors": ["I", "II", "III"],
+      "rings": [0, 0, 0],
+      "positions": [0, 0, 0],
+      "reflector": "B",
+      "plugs": []
+    },
+    "plaintext": "AAAAA",
+    "ciphertext": "BDZGO"
+  },
+  {
+    "name": "Enigma I default HELLOWORLD",
+    "config": {
+      "model": "I",
+      "rotors": ["I", "II", "III"],
+      "rings": [0, 0, 0],
+      "positions": [0, 0, 0],
+      "reflector": "B",
+      "plugs": []
+    },
+    "plaintext": "HELLOWORLD",
+    "ciphertext": "ILBDAAMTAZ"
+  }
+]

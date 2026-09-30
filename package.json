@@ -1,0 +1,34 @@
+{
+  "name": "enigma-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Educational Enigma I, M3 and M4 simulator with monthly codebooks",
+  "packageManager": "pnpm@10.19.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @enigma/web dev",
+    "build": "pnpm build:standalone && pnpm --filter './packages/**' build && pnpm --filter @enigma/web build",
+    "build:standalone": "node scripts/build-standalone.mjs",
+    "preview": "pnpm --filter @enigma/web preview",
+    "typecheck": "pnpm --filter @enigma/core build && pnpm --filter @enigma/shared build && pnpm --filter @enigma/codebook-core typecheck && pnpm --filter @enigma/web typecheck",
+    "lint": "eslint .",
+    "test": "pnpm --filter @enigma/core test && pnpm --filter @enigma/core build && pnpm --filter @enigma/codebook-core test && pnpm --filter @enigma/shared test",
+    "test:e2e": "playwright test",
+    "verify": "pnpm typecheck && pnpm lint && pnpm test && pnpm build",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.5.0",
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^16.4.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.44.1",
+    "vitest": "^3.2.4"
+  }
+}
