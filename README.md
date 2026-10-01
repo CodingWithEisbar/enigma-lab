@@ -4,6 +4,12 @@
 
 > Enigma đã bị phá mã và **không an toàn cho dữ liệu thật**. Không dùng dự án này để bảo vệ mật khẩu, token, khóa API, dữ liệu cá nhân hoặc thông tin nhạy cảm.
 
+## Dành cho người sử dụng
+
+- [Mở bản HTML độc lập](demo/enigma_simulator.html)
+- [Hướng dẫn sử dụng có hình minh họa](docs/USER_GUIDE.md)
+- [Hướng dẫn Codebook theo tháng](docs/CODEBOOK_USER_GUIDE.md)
+
 ## Dành cho admin / maintainer — Khởi chạy ứng dụng
 
 ### 1. Yêu cầu môi trường
